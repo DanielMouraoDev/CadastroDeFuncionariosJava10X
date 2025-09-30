@@ -1,4 +1,4 @@
-package dev.java._x.cadastroDeNinjas;
+package dev.java._x.cadastroDeCarros;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

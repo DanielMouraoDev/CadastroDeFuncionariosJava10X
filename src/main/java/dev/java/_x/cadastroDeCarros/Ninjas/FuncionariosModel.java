@@ -1,23 +1,29 @@
-package dev.java._x.cadastroDeNinjas;
+package dev.java._x.cadastroDeCarros.Ninjas;
 
+import dev.java._x.cadastroDeCarros.Missoes.TarefasModel;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tb_cadastro")
-public class Ninjamodel {
+public class FuncionariosModel {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
-    String nome;
-    String email;
+    private Long id;
+    private String nome;
+    private String email;
     int idade;
 
-    public Ninjamodel() {
+    @ManyToOne
+    @JoinColumn (name = "Tarefas_ID") // foreing key
+    private TarefasModel tarefas;
+
+
+    public FuncionariosModel() {
     }
 
-    public Ninjamodel(Long id, String nome, String email, int idade) {
+    public FuncionariosModel(Long id, String nome, String email, int idade) {
         this.id = id;
         this.nome = nome;
         this.email = email;
