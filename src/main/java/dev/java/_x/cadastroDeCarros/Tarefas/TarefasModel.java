@@ -1,6 +1,6 @@
-package dev.java._x.cadastroDeCarros.Missoes;
+package dev.java._x.cadastroDeCarros.Tarefas;
 
-import dev.java._x.cadastroDeCarros.Ninjas.FuncionariosModel;
+import dev.java._x.cadastroDeCarros.Funcionarios.FuncionariosModel;
 import jakarta.persistence.*;
 
 import java.util.List;

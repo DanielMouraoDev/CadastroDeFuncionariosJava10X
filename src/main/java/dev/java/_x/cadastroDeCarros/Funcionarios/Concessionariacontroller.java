@@ -1,4 +1,4 @@
-package dev.java._x.cadastroDeCarros.Ninjas;
+package dev.java._x.cadastroDeCarros.Funcionarios;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
