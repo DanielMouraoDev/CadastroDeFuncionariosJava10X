@@ -15,13 +15,19 @@ public class FuncionariosModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column (name = "ID")
     private Long id;
 
+    @Column (name = "nome")
     private String nome;
 
     @Column (unique = true)
     private String email;
 
+    @Column (name = "imagem_Url")
+    private String imgUrl;
+
+    @Column (name = "idade")
     int idade;
 
     @ManyToOne
