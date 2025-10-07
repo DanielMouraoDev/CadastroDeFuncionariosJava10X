@@ -1,6 +1,6 @@
-package dev.java._x.cadastroDeCarros.Funcionarios;
+package dev.java._x.cadastroDeFuncionarios.Funcionarios;
 
-import dev.java._x.cadastroDeCarros.Tarefas.TarefasModel;
+import dev.java._x.cadastroDeFuncionarios.Tarefas.TarefasModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

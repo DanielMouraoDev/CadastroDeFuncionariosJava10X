@@ -1,4 +1,4 @@
-package com.example.CadastroDeNinjasJAVA10X;
+package dev.java._x.cadastroDeFuncionarios;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
