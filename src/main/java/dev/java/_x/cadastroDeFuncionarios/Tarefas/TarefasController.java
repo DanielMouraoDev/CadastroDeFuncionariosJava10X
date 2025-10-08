@@ -3,7 +3,7 @@ package dev.java._x.cadastroDeFuncionarios.Tarefas;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("tarefas/criar")
+@RequestMapping("tarefas")
 public class TarefasController {
 
 @PostMapping("/criar")

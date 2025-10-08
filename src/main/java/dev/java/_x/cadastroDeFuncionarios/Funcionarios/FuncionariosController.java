@@ -4,7 +4,7 @@ package dev.java._x.cadastroDeFuncionarios.Funcionarios;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/funcionarios")
 public class FuncionariosController {
 
     @GetMapping("/Boasvindas")
