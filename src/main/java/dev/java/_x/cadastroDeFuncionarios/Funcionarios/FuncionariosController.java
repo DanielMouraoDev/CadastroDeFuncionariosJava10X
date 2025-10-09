@@ -32,9 +32,9 @@ public class FuncionariosController {
     }
 
     //CREATE POR ID
-    @GetMapping("/todosID")
-    public String MostrarTodososFuncionariosporID() {
-        return "Mostrar Funcionario por ID";
+    @GetMapping("/listar/{id}")
+    public FuncionariosModel MostrarTodososFuncionariosporID(@PathVariable Long id) {
+        return funcionariosServices.listarFuncionariosID(id);
     }
 
     //UPDATE

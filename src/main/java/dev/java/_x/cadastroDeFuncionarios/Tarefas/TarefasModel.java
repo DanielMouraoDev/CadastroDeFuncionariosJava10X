@@ -1,5 +1,6 @@
 package dev.java._x.cadastroDeFuncionarios.Tarefas;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.java._x.cadastroDeFuncionarios.Funcionarios.FuncionariosModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor; // Adicionado
@@ -26,5 +27,6 @@ public class TarefasModel {
 
     // Mapeamento One-to-Many
     @OneToMany (mappedBy = "tarefas")
+    @JsonIgnore
     private List<FuncionariosModel> funcionarios;
 }
