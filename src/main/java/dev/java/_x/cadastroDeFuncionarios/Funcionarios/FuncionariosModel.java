@@ -1,5 +1,6 @@
 package dev.java._x.cadastroDeFuncionarios.Funcionarios;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.java._x.cadastroDeFuncionarios.Tarefas.TarefasModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -31,6 +32,7 @@ public class FuncionariosModel {
     int idade;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn (name = "Tarefas_ID") // foreing key
     private TarefasModel tarefas;
 

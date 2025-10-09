@@ -10,9 +10,9 @@ import java.util.List;
 
 @Entity
 @Table (name = "tb_tarefas")
-@Data // Adicionado: Gera Getters, Setters, toString, etc.
-@NoArgsConstructor // Adicionado: Construtor vazio para JPA
-@AllArgsConstructor // Adicionado
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class TarefasModel {
 
 
@@ -23,8 +23,6 @@ public class TarefasModel {
     private String tarefa;
 
     private String importancia;
-
-    // Campo 'funcionario' removido pois é redundante com a lista abaixo
 
     // Mapeamento One-to-Many
     @OneToMany (mappedBy = "tarefas")
