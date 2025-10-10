@@ -21,4 +21,9 @@ public class FuncionariosServices {
             Optional<FuncionariosModel> funcionariosID = funcionariosRepository.findById(id);
             return funcionariosID.orElse(null);
         }
-}
+
+        public FuncionariosModel criarFuncionarios (FuncionariosModel funcionario) {
+        return funcionariosRepository.save(funcionario);
+        }
+
+        }
