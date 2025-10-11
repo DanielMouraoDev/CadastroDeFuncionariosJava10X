@@ -25,8 +25,8 @@ public class FuncionariosModel {
     @Column (unique = true)
     private String email;
 
-    @Column (name = "imagem_Url")
-    private String imgUrl;
+    @Column (name = "Salario")
+    private int salario;
 
     @Column (name = "idade")
     int idade;
